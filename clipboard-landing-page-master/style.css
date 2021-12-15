@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(0, 0%, 93%);
+}
+
+body {
+  color: var(--dark-grayish-blue);
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+}
+
+header {
+  background-image: url("./images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0 0;
+}
+
+header img {
+  width: 80px;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  color: hsl(201, 11%, 66%);
+  line-height: 1.5;
+}
+
+.container {
+  margin: 0 auto 100px;
+  max-width: 100%;
+  width: 1200px;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 20px;
+  border-style: none;
+  margin: 20px 5px 0;
+  color: white;
+  font-weight: bolder;
+}
+
+.btn-primary {
+  background-color: var(--strong-cyan);
+  box-shadow: 0 3px hsl(171, 68%, 36%);
+}
+
+.btn-secondary {
+  background-color: var(--light-blue);
+  box-shadow: 0 3px hsl(233, 71%, 61%);
+}
+
+.small {
+  width: 700px;
+}
+
+.tiny {
+  margin-bottom: 80px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex > * {
+  flex: 0.5;
+}
+
+.flex > img {
+  flex: 0.1;
+  margin: 120px 30px 0;
+}
+
+.foot {
+  margin: 0 auto;
+  padding: 25px;
+}
+
+footer {
+  background-color: var(--grayish-blue);
+}
+
+.small-logo {
+  display: flex;
+  flex: 0.15;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: 0 0 0 50px;
+  /* margin: 0 auto; */
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style-type: none;
+  justify-content: center;
+}
+
+footer ul a {
+  color: var(--dark-grayish-blue);
+  text-decoration: none;
+}
+
+footer .links {
+  flex: 3;
+}
+
+footer .links li {
+  padding: 10px;
+  margin-right: 20px;
+}
+
+footer .social li {
+  margin-right: 10px;
+}
+
+footer .social a {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+@media (max-width: 760px) {
+  .container {
+    margin-bottom: 80px;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .flex > img {
+    margin: 40px 0 0;
+  }
+  .foot {
+    margin: 0;
+  }
+  .small-logo {
+    flex-direction: column;
+    margin: 0;
+    width: 50px;
+  }
+  footer .links {
+    flex-direction: column;
+  }
+  footer .links li {
+    margin-right: 0;
+  }
+  footer .social {
+    padding-left: 20px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
+}
+
+p {
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+h2,
+h4 {
+  font-weight: 900;
+}
+
+.container {
+  max-width: 450px;
+  background-color: white;
+  margin: 100px auto;
+  justify-content: center;
+  border-radius: 15px;
+  overflow: hidden;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  color: var(--dark-blue);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.box {
+  padding: 20px 40px 40px;
+}
+
+.box > p {
+  margin: 0 20px 20px;
+}
+
+.box > a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--dark-blue);
+  font-weight: 900;
+  opacity: 0.5;
+}
+
+.box > a:hover {
+  opacity: 1;
+}
+
+.change-box {
+  background-color: var(--very-pale-blue);
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.change-box > a {
+  color: var(--bright-blue);
+  font-weight: 700;
+  font-size: 0.9rem;
+  opacity: 1;
+}
+
+.change-box > a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.music {
+  display: flex;
+  align-items: center;
+}
+
+.music > img {
+  width: 30%;
+  height: 30%;
+}
+
+.music > .money-info {
+  margin-left: 15px;
+  line-height: 2px;
+}
+
+.money-info > p {
+  font-size: 0.95rem;
+}
+
+button {
+  width: 100%;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: var(--bright-blue);
+  color: white;
+  font-weight: 900;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+button:hover {
+  opacity: 0.5;
+}

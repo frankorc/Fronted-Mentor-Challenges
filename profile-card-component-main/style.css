@@ -19,6 +19,10 @@ body {
   background-position: right 50vw bottom 20vw, left 48vw top 25vw;
 }
 
+h3 {
+  opacity: 0.7;
+}
+
 .container {
   max-width: 350px;
   margin: 180px auto;
@@ -60,7 +64,7 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding-top: 75px;
+  padding-top: 70px;
 }
 
 .name-age > p {

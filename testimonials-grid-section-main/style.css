@@ -26,8 +26,8 @@ body {
 }
 
 .container .leftside {
-  flex: 1 72.5%;
-  margin-right: 2.5%;
+  flex: 1 73%;
+  margin-right: 3%;
 }
 
 .container .rightside {
@@ -94,7 +94,7 @@ body {
 .fifth {
   background-color: var(--white);
   color: var(--very-dark-grayish-blue);
-  padding: 20px 35px;
+  padding-bottom: 36px;
 }
 
 .user {

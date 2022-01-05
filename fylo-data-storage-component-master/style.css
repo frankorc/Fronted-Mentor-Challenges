@@ -25,7 +25,7 @@ body {
 
 .container {
   max-width: 60vw;
-  margin: 250px auto 350px;
+  margin: 300px auto 350px;
   display: flex;
   align-items: flex-end;
 }
